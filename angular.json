@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "tien-personal-blog": "apps/tien-personal-blog",
+    "tien-personal-blog-e2e": "apps/tien-personal-blog-e2e"
+  }
+}

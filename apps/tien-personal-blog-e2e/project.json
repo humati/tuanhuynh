@@ -1,0 +1,28 @@
+{
+  "root": "apps/tien-personal-blog-e2e",
+  "sourceRoot": "apps/tien-personal-blog-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/tien-personal-blog-e2e/cypress.json",
+        "devServerTarget": "tien-personal-blog:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "tien-personal-blog:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tien-personal-blog-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["tien-personal-blog"]
+}
